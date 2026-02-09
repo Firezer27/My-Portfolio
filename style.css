@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+}
+header {
+  background-color: #13151a;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  border-bottom: 1px solid gainsboro;
+}
+.logo {
+  color: #ec7151;
+}
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  color: gray;
+  list-style: none;
+}
