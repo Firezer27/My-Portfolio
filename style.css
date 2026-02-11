@@ -2,8 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
 }
 body {
+  background-color: #111216;
 }
 header {
   background-color: #13151a;
@@ -22,4 +24,108 @@ header {
   gap: 1rem;
   color: gray;
   list-style: none;
+}
+
+/* Common css */
+.span-highlight-1 {
+  color: white;
+}
+.span-highlight {
+  color: #ec7150;
+}
+
+.small-heading {
+  font-size: 16px;
+  width: 400;
+  line-height: 1.5rem;
+  color: rgb(231, 235, 239);
+}
+.para-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(126, 138, 154);
+  line-height: 1.5rem;
+}
+
+#hero {
+  height: 100dvh;
+  padding: 4rem;
+}
+.hello-para {
+  color: #ec7150;
+}
+.first-name {
+  color: white;
+  font-size: 5rem;
+}
+
+.skill-title {
+  color: #7e8a9a;
+  padding-bottom: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 1rem;
+}
+.view-project-btn {
+  background-color: #ec7150;
+  color: black;
+  border: none;
+}
+.contact-me-btn {
+  background-color: #13151a;
+  border: 0.2px solid #7e8a9a;
+  color: white;
+}
+
+/* about section */
+#about {
+  padding: 4rem;
+}
+.about-me-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 10px; */
+}
+.about-me-description {
+  flex: 1;
+}
+.about-work {
+  flex: 1;
+}
+
+.box {
+  padding: 1rem;
+  border: 0.2px solid #7e8a9a;
+}
+
+/* skill secttion */
+.technologies-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tech-box {
+  background-color: #13151a;
+  border: 1px solid #7e8a9a;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tech-span {
+  background-color: #3d2625;
+  color: #ec7150;
+  border: 1px solid #ec7150;
+  padding: 10px;
+  border-radius: 10px;
+}
+.techology-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
