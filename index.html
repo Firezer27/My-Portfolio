@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
@@ -22,12 +27,15 @@
       </header>
       <section>
         <section id="hero">
-          <p>HELLO, I'M</p>
-          <h1>Firezer Bizuwork</h1>
-          <h2>Full-Stack Software Developer</h2>
-          <p>
-            I craft perfomant, accessible web experiences with clean code and
-            thoughtfull design. Turning complex ideas into elegant sollutions.
+          <p class="hello-para">HELLO, I'M</p>
+          <h1 class="first-name">
+            Firezer <span class="span-highlight">Bizuwork</span>
+          </h1>
+          <h2 class="skill-title">Full-Stack Software Developer</h2>
+          <p class="para-info">
+            I craft perfomant, accessible web experiences with clean code <br />
+            and thoughtfull design. Turning complex ideas into elegant <br />
+            sollutions.
           </p>
           <div>
             <button class="btn view-project-btn">View Project</button
@@ -35,75 +43,97 @@
           </div>
         </section>
         <section id="about">
-          <p>ABOUT ME</p>
-          <h2>Passionate about building great software</h2>
+          <p class="span-highlight">ABOUT ME</p>
+          <h2 class="span-highlight-1">
+            Passionate about building
+            <span class="span-highlight"> great software</span>
+          </h2>
           <div class="about-me-info">
             <div class="about-me-description">
-              <p>
+              <p class="para-info">
                 I'm a full-stack developer with a deep love for creating
                 intuitive digital experiences. With expertise spanning from
                 React frontends to Node.js backends, I enjoy the full spectrum
                 of web development.
               </p>
-              <p>
+              <p class="para-info">
                 My approach combines technical precision with creative thinking.
                 I believe great software isn't just about functionality — it's
                 about crafting experiences that feel natural and delightful.
               </p>
-              <p>
+              <p class="para-info">
                 When I'm not coding, you'll find me exploring new technologies,
                 contributing to open-source projects, or sharing knowledge with
                 the developer community.
               </p>
             </div>
             <div class="about-work">
-              <div class="clean-code">
+              <div class="clean-code box">
                 <div class="clean-code-logo"></div>
                 <div class="clean-code-info">
-                  <h5>Clean Code</h5>
-                  <p>Writing maintainable, well-structured code</p>
+                  <h5 class="small-heading">Clean Code</h5>
+                  <p class="para-info">
+                    Writing maintainable, well-structured code
+                  </p>
                 </div>
               </div>
               <div class="problem-solver">
                 <div class="problem-solver-logo"></div>
                 <div class="problem-solver-info">
-                  <h5>Problem Solver</h5>
-                  <p>Breaking down complex challenges</p>
+                  <h5 class="small-heading">Problem Solver</h5>
+                  <p class="para-info">Breaking down complex challenges</p>
                 </div>
               </div>
               <div class="team-player">
                 <div class="team-player-logo"></div>
                 <div class="team-player-info">
-                  <h5>Team Player</h5>
-                  <p>Collaborative and communicative</p>
+                  <h5 class="small-heading">Team Player</h5>
+                  <p class="para-info">Collaborative and communicative</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section id="skills">
-          <p>MY SKILLS</p>
-          <h2>Techologies | work with</h2>
+          <p class="span-highlight">MY SKILLS</p>
+          <h2>
+            <span class="span-highlight-1"> Techologies|</span>
+            <span class="span-highlight"> work with</span>
+          </h2>
           <div class="technologies-container">
-            <div class="frontend-container">
-              <p>Frontend</p>
-              <span>React</span><span>TypeScript</span><span>Next.js</span
-              ><span>Tailwind CSS</span><span></span>Framer Motion
+            <div class="frontend-container tech-box">
+              <p class="small-heading">Frontend</p>
+              <div class="techology-list">
+                <span class="tech-span">React</span>
+                <span class="tech-span">TypeScript</span>
+                <span class="tech-span">Next.js</span>
+                <span class="tech-span">Tailwind CSS</span>
+                <span class="tech-span">Framer Motion</span>
+              </div>
             </div>
-            <div class="backend-container">
-              <p>Backend</p>
-              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
-              ><span>REST APIs</span><span>GraphQL</span>
+            <div class="backend-container tech-box">
+              <p class="small-heading">Backend</p>
+
+              <div class="techology-list">
+                <span class="tech-span">Node.js</span
+                ><span class="tech-span">Express</span
+                ><span class="tech-span">PostgreSQL</span
+                ><span class="tech-span">REST APIs</span
+                ><span class="tech-span">GraphQL</span>
+              </div>
             </div>
-            <div class="tools-deveops">
-              <p>Tools & DevOps</p>
-              <span>Git</span><span>Docker</span><span>CI/CD</span
-              ><span>Figma</span><span>Vercel</span>
+            <div class="tools-deveops tech-box">
+              <p class="small-heading">Tools & DevOps</p>
+              <div class="techology-list">
+                <span class="tech-span">Git</span><span>Docker</span
+                ><span class="tech-span">CI/CD</span
+                ><span class="tech-span">Vercel</span>
+              </div>
             </div>
           </div>
         </section>
         <section id="projects">
-          <p>PORTFOLIO</p>
+          <p class="span-highlight-1">PORTFOLIO</p>
           <h2>Featured Projects</h2>
           <div class="project-list">
             <div class="project-1">
@@ -179,7 +209,7 @@
         <section id="contact">
           <p>GET IN TOUCH</p>
           <h2>Let's work together</h2>
-          <p>
+          <p class="para-info">
             Have a project in mind or just want to chat? I'd love to hear from
             you. Drop me a message and I'll get back to you soon.
           </p>
