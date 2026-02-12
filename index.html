@@ -7,14 +7,21 @@
       href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="navbar">
         <p class="logo">&lt;Developer / &gt;</p>
+
         <nav>
           <ul class="nav-list">
             <li>About</li>
@@ -24,6 +31,9 @@
             <li>Contact</li>
           </ul>
         </nav>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" style="color: white"></i>
+        </div>
       </header>
       <section>
         <section id="hero">
@@ -33,11 +43,10 @@
           </h1>
           <h2 class="skill-title">Full-Stack Software Developer</h2>
           <p class="para-info">
-            I craft perfomant, accessible web experiences with clean code <br />
-            and thoughtfull design. Turning complex ideas into elegant <br />
-            sollutions.
+            I craft perfomant, accessible web experiences with clean code and
+            thoughtfull design. Turning complex ideas into elegant sollutions.
           </p>
-          <div>
+          <div class="hero-btn">
             <button class="btn view-project-btn">View Project</button
             ><button class="btn contact-me-btn">Contact Me</button>
           </div>
@@ -291,34 +300,36 @@
           <h2 class="second-heading">
             Let's <span class="span-highlight">work together</span>
           </h2>
-          <p class="para-info">
+          <p class="para-info contact-description">
             Have a project in mind or just want to chat? I'd love to hear<br />
             from you. Drop me a message and I'll get back to you<br />
             soon.
           </p>
-          <div class="contanct-input">
-            <div>
+          <form action="" class="contact-form">
+            <div class="input-group">
               <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" />
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
               </div>
-              <div class="email">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Tell me about your project"
+                ></textarea>
               </div>
+              <button class="btn">Send Message</button>
             </div>
-            <div class="message-info">
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Tell me about your project"
-              ></textarea>
-            </div>
-            <button class="btn">Send Message</button>
-          </div>
+          </form>
         </section>
         <footer>
           <div class="social-media-icon"></div>
@@ -329,5 +340,7 @@
         </footer>
       </section>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
