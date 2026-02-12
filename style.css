@@ -2,28 +2,59 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", system-ui, sans-serif;
 }
 body {
+  font-family: "Inter", system-ui, sans-serif;
   background-color: #111216;
 }
-header {
-  background-color: #13151a;
-  height: 4rem;
+
+/* common css */
+.text-color-1 {
+  color: rgb(231, 235, 239);
+}
+.text-color-2 {
+  color: rgb(126, 138, 154);
+}
+
+.container {
+  padding: 0 20px;
+}
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  padding: 15px 20px;
+  background-color: #13151a;
   border-bottom: 1px solid gainsboro;
 }
 .logo {
+  font-size: 1rem;
   color: #ec7150;
+  font-weight: 400px;
+  line-height: 24px;
 }
 .nav-list {
-  display: flex;
-  gap: 1rem;
-  color: gray;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 15px;
+  color: #7e8a9a;
   list-style: none;
+  font-size: 0.87rem;
+}
+.nav-list a {
+  color: black;
+  text-decoration: none;
+}
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-list.active {
+  display: flex;
 }
 
 /* Common css */
@@ -33,32 +64,30 @@ header {
 .span-highlight {
   color: #ec7150;
 }
-
-/* .small-heading {
-  font-size: 16px;
-  width: 400;
-  line-height: 1.5rem;
-  color: rgb(231, 235, 239);
-} */
 .para-info {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 1rem;
   color: rgb(126, 138, 154);
   line-height: 1.5rem;
 }
 
 #hero {
-  height: 100dvh;
-  padding: 4rem;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
 }
 .hello-para {
   color: #ec7150;
 }
 .first-name {
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  padding: 2rem 0;
 }
-
+.hero-btn {
+  padding: 3rem 0;
+}
 .skill-title {
   color: #7e8a9a;
   padding-bottom: 1rem;
@@ -66,7 +95,7 @@ header {
 
 .btn {
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 0.87rem;
   border-radius: 10px;
   outline: none;
   margin-right: 1rem;
@@ -86,6 +115,9 @@ header {
 #about {
   padding: 4rem;
   margin-bottom: 4rem;
+  /* width: 100%;
+  height: 100vh;
+  padding: 1rem; */
 }
 .second-heading {
   color: rgb(231, 235, 239);
@@ -210,15 +242,77 @@ img {
 }
 
 .contact {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem; */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
-.contanct-input {
-  border: 1px solid #7e8a9a;
-  border-radius: 8px;
-  color: rgb(126, 138, 154);
+.contact-description {
+  margin-bottom: 3rem;
+}
+.contact-form {
+  background-color: #13151a;
+  border: 1px solid #2d3139;
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: left;
+}
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  color: #7e8a9a;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Input & Textarea Styling */
+input,
+textarea {
   background-color: #1e2229;
+  border: 1px solid #2d3139;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* responsive for table */
+
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    position: static;
+    flex-direction: row;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-list {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color:;
+  }
+  .hamburger {
+    display: none;
+  }
 }
